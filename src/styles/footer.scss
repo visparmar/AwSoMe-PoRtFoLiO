@@ -1,0 +1,104 @@
+.contact-us{
+    background-color: black;
+    width: 100%;
+    height: max-content;
+    // position: fixed;
+    z-index: -1;
+   margin-top: 1000px;
+   padding: 5px 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  @include medium{
+    
+  padding: 50px 0;
+}
+input{
+    width: 350px;
+    height:40px ;
+  outline: none;
+  border: none;
+  padding: 5px 5px;
+  font-size: 18px;
+
+}
+textarea{
+  width: 350px;
+  padding: 5px 5px;
+  height: 50px;
+  font-size: 18px;
+}
+h2{
+  line-height: 1.3;
+  font-size: 40px;
+}
+
+.subtitle{
+  @include subtitle;
+}
+.contact-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  // flex-flow: column;
+  .form-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // flex:1 1;
+  gap: 80px;
+  .first-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    // margin-left: 10px;
+    
+// flex: 1;
+.input-row{
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  gap: 10px;
+}
+  }
+  
+}
+  
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+// background-color: black;
+
+.get-in{
+  // width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-left: auto;
+}
+}
+
+button{
+  width: 360px;
+  height: 50px;
+  color: white;
+  background-color: rgb(211, 84, 10);
+  font-size: 28px;
+  // border-radius: 20px;
+  cursor: pointer;
+}
+}

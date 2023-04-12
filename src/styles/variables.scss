@@ -1,0 +1,36 @@
+$contrast:#e5540a;
+$graphite:#2e2e2e;
+$base:#a9a9a9;
+$dark:#131212;
+
+@mixin medium{
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+
+@mixin default{
+    @media screen and (min-width:1024px){
+        @content;
+    }
+}
+@mixin small{
+    @media screen and (max-width:690px){
+        @content;
+    }
+   
+}
+
+@mixin med{
+   
+    @media screen and (min-width:691px){
+        @content;
+    }
+}
+
+@mixin subtitle{
+    color: $contrast;
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin-bottom: 10px;
+}

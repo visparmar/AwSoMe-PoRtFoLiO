@@ -1,0 +1,150 @@
+
+#particle{
+    opacity: 0.9;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    // position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    position: fixed;
+    object-fit: contain;
+    // height: 100%;
+    // width: 100%;
+    
+}
+.info{
+    z-index:9;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+  margin-right: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+    .icons{
+      height: 200px;
+      width: 100%;
+      // background-color: red;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      gap: 20px;
+
+      .icon-image{
+      font-size: 70px;
+      background-color: white;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow:0px 7px 10px  gray;
+      padding: 5px;
+      cursor: pointer;
+      }
+      #github{
+        color: black;
+      }
+      #linkedin{
+        color: blue;
+      }
+      #codechef{
+        color: rgb(175, 121, 121);
+      }
+      #gfg{
+        color: green;
+      }
+      #leetcode{
+        color: orange;
+      }
+    }
+
+    
+    
+
+    h1{
+        font-size: 30px;
+        color: black;
+        font-weight: 500;
+        margin-left: auto;
+        margin-right: auto;
+
+        .name{
+            color: black;
+            font-weight: 900;
+        }
+       
+    }
+
+    .profile-image{
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background-color: cornsilk;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        rotate: -9deg;
+        margin-bottom: 20px;
+
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .word{
+        font-size: 28px;
+        color: black;
+
+        .animated-text span {
+            display: none;
+            line-height: 1;
+            color: black;
+            font-weight: 600;
+          }
+          
+          .animated-text span.active {
+            display: inline;
+          }
+          
+          .animated-text:after {
+            content: ".";
+            
+            display: inline;
+            width: 6px;
+            text-indent: 0;
+            background: var(--col-icon);
+            animation: blink 0.3s infinite alternate;
+          }
+          .datawords{
+            white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          }
+          
+          @keyframes blink {
+            from {
+              opacity: 0;
+            }
+          
+            to {
+              opacity: 1;
+            }
+          }
+          .i-am-into{
+            display: inline;
+          }
+    }
+   
+}
