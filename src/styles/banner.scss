@@ -1,10 +1,18 @@
 
+.suv{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+}
 #particle{
     opacity: 0.9;
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     // position: absolute;
+    top: 0;
+    left:0;
     justify-content: center;
     align-items: center;
     z-index: -1;
@@ -28,7 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
+    
 
     .icons{
       height: 200px;

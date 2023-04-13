@@ -128,16 +128,17 @@ function Banner() {
     
         </div>
         <div className="icons">
-          <a href="https://github.com/visparmar" target='_blank'><AiFillGithub className='icon-image' id='github'/></a>
-<a href="https://www.linkedin.com/in/vikas-parmar-2492b91ba/" target='_blank'><AiFillLinkedin className='icon-image' id='linkedin'/></a>
-<a href="https://www.codechef.com/users/visparmar119" target='_blank'>< SiCodechef className='icon-image' id='codechef'/></a>
- <a href="https://leetcode.com/Visparmar119/" target='_blank'>< SiLeetcode className='icon-image' id='leetcode'/></a>
- <a href="https://auth.geeksforgeeks.org/user/visparmar119/" target='_blank'> <SiGeeksforgeeks className='icon-image' id='gfg'/></a>
+          <a href="https://github.com/visparmar" target='_blank' rel="noreferrer"><AiFillGithub className='icon-image' id='github'/></a>
+<a href="https://www.linkedin.com/in/vikas-parmar-2492b91ba/" target='_blank' rel="noreferrer"><AiFillLinkedin className='icon-image' id='linkedin'/></a>
+<a href="https://www.codechef.com/users/visparmar119" target='_blank' rel="noreferrer">< SiCodechef className='icon-image' id='codechef'/></a>
+ <a href="https://leetcode.com/Visparmar119/" target='_blank' rel="noreferrer">< SiLeetcode className='icon-image' id='leetcode'/></a>
+ <a href="https://auth.geeksforgeeks.org/user/visparmar119/" target='_blank' rel="noreferrer"> <SiGeeksforgeeks className='icon-image' id='gfg'/></a>
  
 
           </div>
       </div>
 
+<div className="suv">
       <div id="particle">
 
 
@@ -222,6 +223,7 @@ function Banner() {
           }}
         />
 
+      </div>
       </div>
     </div>
   )
