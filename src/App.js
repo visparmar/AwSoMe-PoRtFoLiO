@@ -5,23 +5,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Banner from './components/banner'
 import Footer from './components/footer'
 import Main from './components/main'
+import Projects from './components/Projects'
 
 function App() {
   return (
     <Router>
 <main>
   <Routes>
-  <Route path="/" element={<>
-   {/* <Nav/> */}
-  {/* <Banner/> */}
-  {/* <Footer/> */}
-  <Main/>
-  </>} />
+  <Route path="/" element={<><Main/></>} />
+  <Route path="Projects" element={<><Nav/>< Projects/></>} />
 
  
   </Routes>
   
-{/* <Footer/> */}
+
     </main>
     </Router>
     

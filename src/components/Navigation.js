@@ -21,7 +21,7 @@ function Navigation() {
 
 
       
-      <div className={`container `}>
+      <div className="containert">
      
 
         <img src={Sign} alt="" />
