@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom';
 import { Sling as Hamburger } from 'hamburger-react'
 
 function Navigation() {
-  const styles = {
-    popup:{
-      display:"flex",
-      
-    }
-  };
+
   const [toggle, setToggle] = useState(false);
   const handleCondition = () => {
     setToggle(!toggle);
@@ -32,10 +27,10 @@ function Navigation() {
 
 
           <Link style={{textDecoration: 'none'}} to={"/"}><li>Home</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"Skills"}><li> Skills</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"Projects"}><li>Projects</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"Testimonials"}><li>Testimonials</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"Contacts"}><li>Contacts</li></Link>
+          <Link style={{textDecoration: 'none'}} to={"/Skills"}><li> Skills</li></Link>
+          <Link style={{textDecoration: 'none'}} to={"/Projects"}><li>Projects</li></Link>
+          <Link style={{textDecoration: 'none'}} to={"/Testimonials"}><li>Testimonials</li></Link>
+          <Link style={{textDecoration: 'none'}} to={"/Contacts"}><li>Contacts</li></Link>
         </ul>
         <div className='sidebar' style={{display:toggle?'flex':'none'}}>
         <ol>

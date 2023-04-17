@@ -15,7 +15,7 @@ $dark:#131212;
     }
 }
 @mixin small{
-    @media screen and (max-width:690px){
+    @media screen and (max-width:767px){
         @content;
     }
    
