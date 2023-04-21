@@ -39,9 +39,9 @@ nav{
             @include med{
                 display: none;
             }
-            li{
+            ul{
                 li{
-                    color: gray;
+                    color: #00ffff;
                  }
             }
         }
@@ -56,7 +56,17 @@ nav{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        background-color: #f3f3f8;
+        background-color: black;
+
+        img{
+            // position: absolute;
+
+             top: 0;
+             left: 0;
+            width: 300px;
+            z-index: 9999;
+            rotate: -10deg;
+        }
 
         .burger{
            
@@ -68,7 +78,7 @@ nav{
             align-items: center;
 
             .hamburger-react{
-               color: $dark;
+               color: #00ffff;
                display: none;
 
                @include small{
@@ -94,15 +104,23 @@ nav{
             align-items: center;
             gap: 20px;
             color: gray;
+            padding: 10px;
             padding-right: 60px;
             @include small{
                 display: none;
                 
             }
              li{
-                color: gray;
+                color: #00ffff;
+                padding: 10px;
+                border-radius: 10px;
              }
            
+        }
+
+        li:hover{
+            background-color: #00ffff;
+            color: #111;
         }
 
         

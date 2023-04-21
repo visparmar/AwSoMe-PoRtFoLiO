@@ -1,7 +1,8 @@
 import React,{useEffect} from 'react'
-import Pro from '../Assets/projects (1).svg'
+import Pro from '../Assets/header-male.svg'
 import { motion ,useAnimation} from "framer-motion"
 import { useInView } from "react-intersection-observer";
+import Data from '../components/ProjectData'
 
 const textAnimate={
   offscreen:{y:100, opacity:0},
@@ -45,12 +46,14 @@ useEffect(() => {
         </motion.div>
       </motion.div>
 
-      <motion.div className="lower-container"
+      <motion.div className="lower--container"
 >
-        <div className="mid-container">
+        <div className="mid--container">
 
-       
-        <motion.div className= "container"
+
+       {Data.map((data,index)=>{
+        return(
+          <motion.div className= "container" key={index}
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{once:true,amount:0.5}}
@@ -58,175 +61,18 @@ useEffect(() => {
           variants={textAnimate}>
     <div className = "card">
       <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
+        <img href = "#" src = {data.Image}/>
       </div>
       <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
+        <h3>{data.Title}</h3>
+        <p> {data.Desc}</p>
       </div>
     </div>    
   </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
-  <motion.div className= "container"
-          initial={"offscreen"}
-          whileInView={"onscreen"}
-          viewport={{once:true,amount:0.5}}
-          transition={{staggerChildren:0.5}}
-          variants={textAnimate}>
-    <div className = "card">
-      <div className = "image">
-        <img href = "#" src = "https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"/>
-      </div>
-      <div className ="content">
-        <h3>This is content</h3>
-        <p>DIn publishing and graphic design,           Lorem ipsum is a placeholder text               commonly used to demonstrate the visual         form of a document or a typeface without         relying on meaningful content.</p>
-      </div>
-    </div>    
-  </motion.div>
+        )
 
- 
+       })}
 
-
-
-
-  
-
-
-
- 
-
-  
- 
-
- 
-      
 
         </div>
       </motion.div>

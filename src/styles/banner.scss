@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // box-shadow: rgb(4, 230, 247) 0px 22px 70px 4px;
     
 
     .icons{
@@ -54,7 +55,7 @@
       background-color: white;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow:0px 7px 10px  gray;
+      box-shadow:0px 7px 10px  #00ffff;
       padding: 5px;
       cursor: pointer;
       }
@@ -80,13 +81,13 @@
 
     h1{
         font-size: 30px;
-        color: black;
+        color: #00ffff;
         font-weight: 500;
         margin-left: auto;
         margin-right: auto;
 
         .name{
-            color: black;
+            color: #00ffff;
             font-weight: 900;
         }
        
@@ -103,21 +104,23 @@
         align-items: center;
         rotate: -9deg;
         margin-bottom: 20px;
+        box-shadow: rgb(4, 230, 247) 0px 22px 70px 4px;
 
         img{
             width: 200px;
             height: 200px;
             object-fit: cover;
+            
         }
     }
     .word{
         font-size: 28px;
-        color: black;
+        color: #00ffff;
 
         .animated-text span {
             display: none;
             line-height: 1;
-            color: black;
+            color: #00ffff;
             font-weight: 600;
           }
           
@@ -156,3 +159,7 @@
     }
    
 }
+
+
+
+

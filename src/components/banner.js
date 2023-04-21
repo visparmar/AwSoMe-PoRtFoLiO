@@ -151,7 +151,7 @@ function Banner() {
           options={{
             background: {
               color: {
-                value: "#ffffff",
+                value: "#000000",
               },
             },
             fpsLimit: 50,
@@ -179,7 +179,7 @@ function Banner() {
             },
             particles: {
               color: {
-                value: ["#8a2be2", "#00ffff", "#ffff00", "#008000", "#ff00ff"],
+                value: ["#8a2be2", "#ff0000", "#ffff00", "#008000", "#ff00ff"],
               },
               links: {
                 color: "#dcdcdc",

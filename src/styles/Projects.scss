@@ -1,7 +1,9 @@
 .z-black{
     width: 100%;
+    // min-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-color: #111;
 
 
 .uppercontainer{
@@ -10,53 +12,62 @@
     margin-top: 140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    gap: 10px;
+    // justify-content: space-around;
 
     .text{
         width: 580px;
         display: flex;
         padding: 5px 5px;
         flex-wrap: wrap;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
+        color: #00ffff;
 
         .project-heading{
           font-weight: 600;
           font-size: 38px;
-          color: $dark;
+          color: #00ffff;
+          padding: 0;
+          margin: 0;
         }
     }
 
     .photo{
-        display: flex;
+      width: max-content;
+      height: 100%;
+        // display: flex;
         justify-content: center;
         align-items: center;
 
         img{
-            width: 200px;
-            min-width: 100px;
+            width: 400px;
+            max-width: 90%;
         }
     }
 }
-.lower-container{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.lower--container{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
     
-    // padding: 10px 10px;
-    
-.mid-container{
-    display: flex;
-   padding-top: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width:max-content;
-    margin-top: 200px;
-    gap: 200px;
+.mid--container{
+  display: flex;
+  padding-top: 100px;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   margin-top: 200px;
+   gap: 200px;
+
 
     
 .container {
@@ -64,7 +75,7 @@
     width : max-content;
     display : flex;
     align-items : center;
-    justify-content : center;
+    justify-content : space-between;
     flex-wrap :wrap;
     // padding : 30px;  
   }
@@ -72,14 +83,19 @@
   .container .card {
     position: relative;
     max-width : 300px;
-    height : 215px;  
-    background-color : #fff;
+    height : 160px;  
+    background-color : black;
     margin : auto;
     padding : 20px 15px;
+    border: 2px solid cyan;
     
     display : flex;
     flex-direction : column;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow :rgb(4, 230, 247) 0px 2px 20px 8px;
+    // box-shadow: rgba(3, 230, 247) 0px 0px 0px 3px;
+    // box-shadow: rgba(3, 230, 247)  0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    // box-shadow: rgba(3, 230, 247) 0px 3px 8px;
+    // box-shadow: rgb(4, 230, 247) 0px 5px 15px;
     transition : 0.3s ease-in-out;
     border-radius : 15px;
   }
@@ -90,14 +106,14 @@
   
   .container .card .image {
     position : relative;
-    width : 260px;
-    height : 260px;
+    width : 320px;
+    height : 310px;
     border-radius: 15px;
-    top : -40%;
-    left: 19px;
-    
-    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-    z-index : 1;
+    top : -6%;
+    left: -10px;
+  
+    // box-shadow :rgb(4, 230, 247) 0px 5px 15px;
+    // z-index : 1;
   }
   
   .container .card .image img {
@@ -108,9 +124,10 @@
   
   .container .card .content {
     position : relative;
-    top : -140px;
+    top : -20px;
     padding : 10px 15px;
-    color : #111;
+    color : #00ffff;
+    background-color: e;
     text-align : center;
     font-size: 14px;
     visibility : hidden;
@@ -130,3 +147,4 @@
     
 }
 }
+
