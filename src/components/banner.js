@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import Banner from '../Assets/pexels-luis-gomes-546819.jpg'
 import { AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import { motion ,useAnimation} from "framer-motion"
 import {SiCodechef, SiLeetcode, SiGeeksforgeeks } from 'react-icons/si'
 import viss from "../Assets/profile2-removebg-preview.png"
 import { useCallback } from "react";
@@ -11,6 +12,54 @@ import Footer from './footer'
 
 
 function Banner() {
+
+  const textAnimate={
+    offscreen:{x:-500, opacity:0},
+    onscreen:{x:0,
+    opacity:1,
+  transition:{type:"spring",
+  bounce:0.4,
+  delay:1,
+  duration:4}}
+  }
+
+  const textAnimate2={
+    offscreen:{x:-500, opacity:0},
+    onscreen:{x:0,
+    opacity:1,
+  transition:{type:"spring",
+  bounce:0.4,
+  delay:1.5,
+  duration:4}}
+  }
+  const textAnimate3={
+    offscreen:{x:-500, opacity:0},
+    onscreen:{x:0,
+    opacity:1,
+  transition:{type:"spring",
+  bounce:0.4,
+  delay:2,
+  duration:4}}
+  }
+  const textAnimate4={
+    offscreen:{x:-500, opacity:0},
+    onscreen:{x:0,
+    opacity:1,
+  transition:{type:"spring",
+  bounce:0.4,
+  delay:2.5,
+  duration:4}}
+  }
+  
+  const item = {
+    offscreen:{x:-500, opacity:0},
+    onscreen:{x:0,
+    opacity:1,
+  transition:{type:"spring",
+  bounce:0.4,
+  delay:0.5,
+  duration:3}}
+  }
   const [isContainerActive, setIsContainerActive] = useState(false);
   useEffect(() => {
     const allElements = document.querySelectorAll(".animated-text");
@@ -116,18 +165,30 @@ function Banner() {
     <div className='outer'>
 
       <div className='info'>
+        <motion.div initial={"offscreen"}
+        animate={"onscreen"}
+        variants={item}>
         <h1 > Hi <span >&#128075;</span> , i am <span className='name'> vikas Parmar</span> </h1>
-        <div className="profile-image">
+        </motion.div>
+        
+        <motion.div className="profile-image"  initial={"offscreen"}
+        animate={"onscreen"}
+        variants={textAnimate2}>
           <img src={viss} alt="" />
-        </div>
-        <div className="word">
+        </motion.div>
+        <motion.div className="word"  initial={"offscreen"}
+        animate={"onscreen"}
+        variants={textAnimate3}>
           <span className='i-am-into'>I am into <span className="animated-text"
             data-words="Designing, UI/UX, Competative Programming, Web Development, Open Source"></span>
           </span>
 
     
-        </div>
-        <div className="icons">
+        </motion.div>
+        <motion.div className="icons"
+         initial={"offscreen"}
+         animate={"onscreen"}
+         variants={textAnimate4}>
           <a href="https://github.com/visparmar" target='_blank' rel="noreferrer"><AiFillGithub className='icon-image' id='github'/></a>
 <a href="https://www.linkedin.com/in/vikas-parmar-2492b91ba/" target='_blank' rel="noreferrer"><AiFillLinkedin className='icon-image' id='linkedin'/></a>
 <a href="https://www.codechef.com/users/visparmar119" target='_blank' rel="noreferrer">< SiCodechef className='icon-image' id='codechef'/></a>
@@ -135,7 +196,7 @@ function Banner() {
  <a href="https://auth.geeksforgeeks.org/user/visparmar119/" target='_blank' rel="noreferrer"> <SiGeeksforgeeks className='icon-image' id='gfg'/></a>
  
 
-          </div>
+          </motion.div>
       </div>
 
 <div className="suv">

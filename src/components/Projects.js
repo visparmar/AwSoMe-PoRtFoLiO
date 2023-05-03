@@ -13,6 +13,8 @@ bounce:0.4,
 duration:3}}
 }
 
+
+
 function Projects() {
 
 const control = useAnimation();
