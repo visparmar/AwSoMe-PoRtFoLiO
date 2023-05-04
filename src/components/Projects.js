@@ -55,12 +55,14 @@ useEffect(() => {
 
        {Data.map((data,index)=>{
         return(
+          
           <motion.div className= "container" key={index}
           initial={"offscreen"}
           whileInView={"onscreen"}
           viewport={{once:true,amount:0.5}}
           transition={{staggerChildren:0.5}}
           variants={textAnimate}>
+            
     <div className = "card">
       <div className = "image">
         <img href = "#" src = {data.Image}/>
