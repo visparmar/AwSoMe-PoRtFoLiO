@@ -69,7 +69,16 @@ useEffect(() => {
       </div>
       <div className ="content">
         <h3>{data.Title}</h3>
-        <p> {data.Desc}</p>
+        <div className="tech">
+        {data.Desc.map((e,index)=>{
+
+
+return(<p className='chip' key={index}>{ e.Tech}</p>)       
+
+})}
+        </div>
+       
+       
       </div>
     </div>    
   </motion.div>
