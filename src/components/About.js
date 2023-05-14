@@ -1,6 +1,10 @@
 import React from 'react'
 import info from '../Assets/progilell.jpg'
 
+import  {timelineElement} from "../components/ProjectData.js"
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
 function About() {
   return (
     <div>
@@ -26,6 +30,43 @@ function About() {
       </div>
       <div className="education">
 <p>Education</p>
+
+<div className='horizontal-li'></div>
+
+<VerticalTimeline
+lineColor={"aqua"}
+>
+  {
+    timelineElement.map((e)=>{
+    // 
+      // let isWorkIcon=e.icon;
+        return(
+          <VerticalTimelineElement
+          key={e.key}
+          iconStyle={{ background: '#00FFFF', color: '#fff' }}
+          contentArrowStyle={{ borderRight: '7px solid  #00FFFF' }}
+          
+          contentStyle={{ background: '#808080', color: '#fff' }}
+          
+          // date={e.date}
+          dateClassName='date'
+          
+          description={e.description}
+          // icon={<KIET/>}
+          >
+<h3>{e.Degree}</h3>
+<p>{e.college}</p>
+<p>{e.date}</p>
+          </VerticalTimelineElement>
+        );
+    })
+  }
+</VerticalTimeline>
+
+<div className="timeline">
+
+</div>
+
       </div>
     </div>
   )

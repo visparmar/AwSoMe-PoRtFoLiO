@@ -21,7 +21,7 @@ height: 100vh;
 
     .img{
         height: max-content;
-        border: 50px solid rgb(3, 250, 250);
+        border: 10px solid rgb(3, 250, 250);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,16 +59,25 @@ width: 30%;
 
 .education{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    
     align-items: center;
     color: aqua;
     background-color: black;
     padding-top: 100px;
     p{
-        font-size: 20vw;
+        color: aqua;
+        font-size: 10vw;
         font-weight: 600;
 
        
         
+    }
+    .horizontal-li{
+        height: 5px;
+        width: 70%;
+        color: aqua;
+        background-color: aqua;
     }
 }
