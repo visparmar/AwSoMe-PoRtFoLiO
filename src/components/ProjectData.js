@@ -25,28 +25,28 @@ const Data=[{
     id:1,
     Degree:'Master in Computer Application (MCA)',
     college:"KIET Group of institutions",
-     icon:"https://github.com/visparmar/image-source/blob/main/Weather-.png?raw=true",
+     icon:"https://github.com/visparmar/image-source/blob/main/KIET.jpg?raw=true",
     date:"August 2021 - present"
 
 },{
     id:2,
     Degree:'Bachelor in Computer Application (BCA)',
     college:"Indira Gandhi National Open University (IGNOU)",
-    icon:"https://github.com/visparmar/image-source/blob/main/Weather-.png?raw=true",
+    icon:"https://github.com/visparmar/image-source/blob/main/IGNOU.png?raw=true",
  
     date:"August 2017 - july 2020"
 },{
     id:3,
     Degree:'Intermediate',
     college:"Columbia Convent Institute ",
-    icon:"https://github.com/visparmar/image-source/blob/main/Weather-.png?raw=true",
+    icon:"https://github.com/visparmar/image-source/blob/main/cbse.jpg?raw=true",
  
     date:"April 2016 - March 2017"
 },{
     id:4,
     Degree:'High School',
     college:"L R Saraswati Vidya Mandir",
-    icon:"https://github.com/visparmar/image-source/blob/main/Weather-.png?raw=true",
+    icon:"https://github.com/visparmar/image-source/blob/main/cbse.jpg?raw=true",
  
     date:"Aril 2014 - March 2015"
 }
