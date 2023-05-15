@@ -27,7 +27,7 @@ function Navigation() {
 
 
           <Link style={{textDecoration: 'none'}} to={"/"}><li>Home</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"/Skills"}><li> Skills</li></Link>
+          {/* <Link style={{textDecoration: 'none'}} to={"/Skills"}><li> Skills</li></Link> */}
           <Link style={{textDecoration: 'none'}} to={"/Projects"}><li>Projects</li></Link>
           <Link style={{textDecoration: 'none'}} to={"/About"}><li>About</li></Link>
           {/* <Link style={{textDecoration: 'none'}} ><button>Download Cv</button></Link> */}
@@ -47,7 +47,7 @@ function Navigation() {
 
 
         <Link style={{textDecoration: 'none'}} to={"/"}><li>Home</li></Link>
-          <Link style={{textDecoration: 'none'}} to={"/Skills"}><li> Skills</li></Link>
+          {/* <Link style={{textDecoration: 'none'}} to={"/Skills"}><li> Skills</li></Link> */}
           <Link style={{textDecoration: 'none'}} to={"/Projects"}><li>Projects</li></Link>
           <Link style={{textDecoration: 'none'}} to={"/About"}><li>About</li></Link>
           <Link style={{textDecoration: 'none'}} ><button>Download Cv</button></Link>
